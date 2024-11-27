@@ -4,14 +4,14 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
-const name = "[Your Name]";
-export const siteTitle = "Next.js Sample Website";
+const name = "Ücretsiz Figma Eğitimleri";
+export const siteTitle = "Ücretsiz Figma Eğitimleri";
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/figma-dersleri-logo.ico" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -30,7 +30,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/profile.jpg"
+              src="/images/profile.png"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -43,7 +43,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <Image
                 priority
-                src="/images/profile.jpg"
+                src="/images/profile.png"
                 className={utilStyles.borderCircle}
                 height={108}
                 width={108}
@@ -61,7 +61,7 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
+          <Link href="/">← Ana sayfa</Link>
         </div>
       )}
     </div>
